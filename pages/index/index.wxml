@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container-box">
+  <view class='img-box'>
+    <canvas style='width:686rpx;height:686rpx;background-color:#f1f1f1;' canvas-id='mycanvas'></canvas>
+  </view>
+  <form >
+    <view class='input-row'>
+     <label>网址</label>
+     <input name="url" type='text' maxlength='255' placeholder='{{placeholder}}' bindinput="inputeidt"/>
+    </view>
+    <button form-type='submit' class='mybtn' type='primary' bindtap='formSubmit'>生成二维码</button>
+  </form>
+</view>
